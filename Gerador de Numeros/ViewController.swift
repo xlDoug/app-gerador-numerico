@@ -20,6 +20,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var legendResult: UILabel!
+    @IBAction func gerarNumero(_ sender: Any) {
+        
+        var numeroRandomico = arc4random_uniform( 101 )
+        
+        legendResult.text = String( numeroRandomico )
+    }
 
 }
 
